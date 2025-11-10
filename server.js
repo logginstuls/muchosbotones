@@ -692,10 +692,11 @@ app.listen(PORT, () => console.log(`✅ Servidor activo en puerto ${PORT}`));
 setInterval(async () => {
   try {
     // URL del Auto-Ping usando tu dominio en Render
-    const res = await fetch("https://diosnoseolvidademi.onrender.com"); 
+    const res = await fetch("https://muchosbotones.onrender.com"); 
     const text = await res.text();
     console.log("🔁 Auto-ping realizado:", text);
   } catch (error) {
     console.error("❌ Error en auto-ping:", error.message);
   }
+
 }, 180000); // 180000 ms = 3 minutos
